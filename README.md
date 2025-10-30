@@ -67,29 +67,6 @@ Open your browser
 delphi
 Navigate to http://localhost:5173
 
-🏗️ Project Structure
-nix
-task-manager-app/
-├── src/
-│ ├── components/
-│ │ ├── TaskForm.tsx # Task creation form
-│ │ ├── TaskList.tsx # Task list with drag & drop
-│ │ ├── TaskItem.tsx # Individual task item
-│ │ └── TaskFilter.tsx # Filter component
-│ ├── store/
-│ │ ├── store.ts # Redux store configuration
-│ │ └── taskSlice.ts # Task state management
-│ ├── types/
-│ │ └── index.ts # TypeScript type definitions
-│ ├── App.tsx # Main app component
-│ ├── App.css # App entry point
-│ └── main.tsx # Global styles
-├── public/
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-
 🎯 Usage
 Adding a Task
 Click on the input field at the top
