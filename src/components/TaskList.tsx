@@ -22,13 +22,14 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
   useSortable,
+  type AnimateLayoutChanges,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
 import TaskItem from "./TaskItem";
 import type { Task } from "../types";
 
-const animateLayoutChanges = () => false;
+const disableAnimation: AnimateLayoutChanges = () => false;
 
 const ITEMS_PER_PAGE = 7;
 
@@ -46,7 +47,7 @@ const SortableTaskItem: React.FC<{
     isDragging,
   } = useSortable({
     id: task.id,
-    animateLayoutChanges,
+    animateLayoutChanges: disableAnimation,
   });
 
   const style: React.CSSProperties = {
